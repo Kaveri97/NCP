@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <title>Courier Management</title>
+    <link href="style.css" rel='stylesheet' type='text/css' media="all" />
+    <script src='jquery.min.js'></script>
+<script src="index.js"></script>
+
+    <body>
+        <h1></h1>
+    <div class="form-w3ls">	
+        <!--form action="Add.html"-->
+            <button onclick="Add()">Add Record</button>
+        <!--/form-->
+        <!--form action="View.html"-->
+        <form method="get" action="SearchR">
+            <button onclick="Handle()">Handle Records</button>
+        </form>
+                
+        <!--/form-->
+        <form method= "post" action="Reminder">
+                <button onclick="Sent()">Send Reminder</button>
+        </form>
+    </div>
+<script>
+function Add(){
+window.location="Add.html";
+//return true;
+}
+</script>
+<script>
+function Sent(){
+alert("Reminder Sent!");
+//return true;
+}
+</script>
+<script >
+function Handle(){
+//window.location="View.html";
+//return true;
+}
+</script>
+</body>
+</html>

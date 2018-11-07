@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <title>Courier Management</title>
+<meta charset="utf-8"/>
+
+<!--meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"-->
+  <link rel="stylesheet" href="NCP.css">
+</head>
+<body>
+    <h3 align="right"><a href="Second.html">Home</a></h3>
+    <div class="form-w3ls">
+ <form method="post" action="Insert">  
+  <fieldset>
+    <legend>Customer information</legend><br>
+  Name:<br>
+  <input type="text" name="name" value=" " id = "Name"><br>
+  Registration Number:<br>
+  <input type="text" name="Rno" value=" " id = "Rno"><br>
+  Phone Number:<br>
+  <input type="text" name="tel"  id = "PhNo" required="required"><br>
+  Service:<br>
+  <input type="text" name="ser" value=" " id = "Ser" ><br>
+  Order ID:<br>
+  <input type="text" id = "OID" name="Oid"  required="required"><br><br><br>
+  <input type="submit" value="Submit">
+  <input type="reset">
+  <!--button onclick="getvalues()">Submit</button>
+  <button onclick="Reset()">Reset</button-->
+  </fieldset>
+</form> 
+    </div>
+<!--script>
+            /*function getvalues()
+            {onclick="add()"
+            var name = document.getElementById("Name").value;
+            var rno = document.getElementById("Rno").value;
+            var phno = document.getElementById("PhNo").value;
+            var ser = document.getElementById("Ser").value;
+            var oid = document.getElementById("OID").value;
+            alert(name);
+            }*/
+            
+        function add(){
+        /*String name = document.getElementById("Name").value;
+        String rno = document.getElementById("Rno").value;
+        String phno = document.getElementById("PhNo").value;
+        String ser = document.getElementById("Ser").value;
+        String oid = document.getElementById("OID").value;*/
+        var name = document.getElementById("Name").value;
+        var rno = document.getElementById("Rno").value;
+        var phno = document.getElementById("PhNo").value;
+        var ser = document.getElementById("Ser").value;
+        var oid = document.getElementById("OID").value;
+        var x = new Insert(name,rno,phno,ser,oid);
+        //window.asObject().setProperty("java", new Insert(name,rno,phno,ser,oid));
+      }
+        //i.submitData();
+</script-->
+</body>
+</html>

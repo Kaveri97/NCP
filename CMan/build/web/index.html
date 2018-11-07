@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Courier Management</title>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--online_fonts-->
+	<link href="//fonts.googleapis.com/css?family=Sansita:400,400i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+<!--//online_fonts-->
+	<link href="style.css" rel='stylesheet' type='text/css' media="all" /><!--stylesheet-->
+</head>
+<body>
+<h1></h1>
+<div class="form-w3ls">	
+    <ul class="tab-group cl-effect-4">
+        <li class="tab active"><a href="#signin-agile">Welcome!!</a></li>
+    </ul>
+    <div class="tab-content">
+        <div id="signin-agile">
+            <form action="Second.html">
+				<p class="header">Username</p>
+                                <input type="text" id = "myID" required="required">
+				<p class="header">Password</p>
+				<input type="password" id = "myPW" required="required">
+				<button onclick="return SignIn()">Sign In</button>
+				<!--input type="submit" name="submit" value="Log In"-->
+			</form>
+		</div>
+    </div>
+</div> 
+<script src='jquery.min.js'></script>
+<script src="index.js"></script>
+<script>
+function SignIn(){
+var ID = document.getElementById("myID").value;
+var PW = document.getElementById("myPW").value;
+if(ID==="admin" && PW==="admin"){
+    //alert("Login Successful!");
+    //window.location="Second.html";
+    return true;
+}else{
+    alert("Enter Correct Credentials");
+    return false;
+}
+}
+</script>
+</body>
+</html>
